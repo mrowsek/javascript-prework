@@ -6,7 +6,6 @@ document.getElementById('play-scissors').addEventListener('click', function(){pl
 function playGame(playerInput) {
     clearMessages();
 
-    console.log('choose number: ' + playerInput);
     const randomNumber = Math.floor(Math.random() * 3 + 1);
    
     let getMoveName = function (argMoveId){
@@ -44,7 +43,7 @@ function playGame(playerInput) {
         }else if (argComputerMove == 'nożyce' && argPlayerMove == 'nożyce'){
             printMessage('Remis');
         }
-    }
+    };
 
-    displayResult(getMoveName(playerInput), getMoveName(randomNumber));    
+    displayResult(getMoveName(randomNumber), getMoveName(playerInput));    
 }
