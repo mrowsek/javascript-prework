@@ -1,4 +1,5 @@
 
+{
 document.getElementById('play-rock').addEventListener('click', function(){playGame('1');});
 document.getElementById('play-paper').addEventListener('click', function(){playGame('2');});
 document.getElementById('play-scissors').addEventListener('click', function(){playGame('3');});
@@ -8,7 +9,7 @@ function playGame(playerInput) {
 
     const randomNumber = Math.floor(Math.random() * 3 + 1);
    
-    let getMoveName = function (argMoveId){
+    const getMoveName = function (argMoveId){
         if(argMoveId == 1){
             return 'kamień';
         } else if (argMoveId == 2){
@@ -20,7 +21,7 @@ function playGame(playerInput) {
         return 'nieznany ruch';
     };
     
-    let displayResult = function (argComputerMove, argPlayerMove) {
+    const displayResult = function (argComputerMove, argPlayerMove) {
         printMessage('Twój ruch to: ' + argPlayerMove);
         printMessage('Moj ruch to: ' + argComputerMove);
         
@@ -46,4 +47,5 @@ function playGame(playerInput) {
     };
 
     displayResult(getMoveName(randomNumber), getMoveName(playerInput));    
+}
 }
