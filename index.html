@@ -6,13 +6,23 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="container">
-		<div id="buttons"></div>
-			<button class="btn btn-1" id="play-rock">kamień</button>
-			<button class="btn btn-2" id="play-paper">papier</button>
-			<button class="btn btn-3" id="play-scissors">nozyce</button>
-		<div id="messages"></div>
+	<div id="header" class="header">
+		<h1>Papier Nożyce Kamień</h1>
 	</div>
+	<div class="container">
+		<div class="anser">
+			<h4>Witam w grze. Aby rozpocząć wystarczy kliknąć jeden z poniższych przycisków. 
+				<br>
+				Miłej zabawy :-)
+			</h4>
+		</div>
+	</div>
+	<div class="container">
+			<button class="btn btn-1" id="play-rock"><img src="./images/rock.png" alt=""></button>
+			<button class="btn btn-2" id="play-paper"><img src="./images/paper.png" alt=""></button>
+			<button class="btn btn-3" id="play-scissors"><img src="./images/scissors.png" alt=""></button>
+		</div>
+		<div id="messages" class="answer"></div>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
 </body>

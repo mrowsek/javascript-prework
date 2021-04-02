@@ -1,7 +1,7 @@
 function printMessage(msg){
 	let div = document.createElement('div');
 	div.innerHTML = msg;
-	document.getElementById('messages').appendChild(div);
+	document.getElementById('messages').appendChild(div).classList.add('score');
 }
 
 function clearMessages(){

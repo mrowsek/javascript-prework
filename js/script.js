@@ -1,4 +1,3 @@
-
 {
 document.getElementById('play-rock').addEventListener('click', function(){playGame('1');});
 document.getElementById('play-paper').addEventListener('click', function(){playGame('2');});
@@ -22,19 +21,19 @@ function playGame(playerInput) {
     };
     
     const displayResult = function (argComputerMove, argPlayerMove) {
-        printMessage('Twój ruch to: ' + argPlayerMove);
-        printMessage('Moj ruch to: ' + argComputerMove);
+        printMessage('Ja: ' + argPlayerMove);
+        printMessage('Pc: ' + argComputerMove);
         
         if( argComputerMove == 'kamień' && argPlayerMove == 'papier'){
             printMessage('Ty wygrywasz!');
         }else if(argComputerMove == 'papier' && argPlayerMove == 'papier'){
             printMessage('Remis');
         }else if (argComputerMove == 'nożyce' && argPlayerMove == 'papier'){
-            printMessage('Przegrales');
+            printMessage('Przegrałeś');
         } else if(argComputerMove == 'kamień' && argPlayerMove == 'kamień'){
             printMessage('Remis');
         }else if (argComputerMove == 'papier' && argPlayerMove == 'kamień'){
-            printMessage('Przegrales');
+            printMessage('Przegrałeś');
         }else if (argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
             printMessage('Wygrałeś');
         }else if(argComputerMove == 'kamień' && argPlayerMove == 'nożyce'){
