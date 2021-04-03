@@ -9,7 +9,10 @@
         btn.innerHTML = 'Next'
         welcomeDiv.innerHTML = '<h4>Hej! :-) Nazywam się Aleks. Nauczyłem się ostatnio grać i chciałbym z kimś poćwiczyć. Zagrasz ze mną? Aby rozpocząć wystarczy kliknąć jeden z poniższych przycisków. Miłej zabawy :-)</h4>';
         welcomeDiv.appendChild(btn).addEventListener('click', ()=> {
-            welcomeDiv.innerHTML = '';
+            welcomeDiv.innerHTML = '<h4>Jak Masz na imię?</h4>';
+            welcomeDiv.appendChild(document.createElement('input'));
+            console.log(document.getElementsByTagName('input').value);
+            welcomeDiv.appendChild(btn);
         });
     }
 
