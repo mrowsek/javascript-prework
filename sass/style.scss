@@ -1,8 +1,11 @@
 /* Buttons */
+body {
+    background: rgb(212, 233, 240);
+}
 .container {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .welcomeBox {

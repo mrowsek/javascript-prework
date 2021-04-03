@@ -7,7 +7,7 @@
     const nameInput = () => {
         let welcomeDiv = document.getElementById('welcomeBox');
         let btn = document.createElement('BUTTON');
-        btn.innerHTML = 'Zapisz'
+        btn.innerHTML = 'Zaczynamy'
         welcomeDiv.innerHTML = '<h4>Jak Masz na imię?</h4>';
         let input = welcomeDiv.appendChild(document.createElement('input'));
         input.setAttribute('type', 'text');
@@ -23,7 +23,7 @@
         let welcomeDiv = document.getElementById('welcomeBox');
         let btn = document.createElement('BUTTON');
         btn.innerHTML = 'Dalej'
-        welcomeDiv.innerHTML = '<h4>Hej! :-) Nazywam się Aleks. Nauczyłem się ostatnio grać i chciałbym z kimś poćwiczyć. Zagrasz ze mną? Aby rozpocząć wystarczy kliknąć Dalej. Miłej zabawy :-)</h4>';
+        welcomeDiv.innerHTML = '<h4>Hej! :-) Nazywam się Aleks. Nauczyłem się ostatnio grać i chciałbym z kimś poćwiczyć. Zagrasz ze mną? Aby rozpocząć wystarczy kliknąć "<u>Dalej</u>", następnie podać swoje imię i przycisk "<u>Zaczynamy</u>". Miłej zabawy :-)</h4>';
         welcomeDiv.appendChild(btn).addEventListener('click', ()=> nameInput());
     }
 
