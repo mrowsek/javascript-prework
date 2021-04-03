@@ -5,7 +5,12 @@
     margin-top: 100px;
 }
 
-.answer {
+.welcomeBox {
+    display: block;
+    text-align: center;
+    width: 500px;
+}
+.answerBox {
     display: block;
     text-align: center;
 }
@@ -19,6 +24,9 @@
 .header {
     text-align: center;
     margin-top: 135px;
+}
+.icon {
+    width: 100px; height: 100px;
 }
 
 .btn-1 {
